@@ -106,6 +106,7 @@ const textArea=document.querySelector("#text")
 const authName=document.querySelector("#author")
 const mainArea=document.querySelector('.body')
 const nxtbtn=document.querySelector('#new-quote')
+gen()
 function getrandomColor()
 {
   var letters = '0123456789ABCDEF';
@@ -118,19 +119,20 @@ function getrandomColor()
 }
   
 
-newQuote.addEventListener('click', function()
+function gen()
 {
   let randomInd=Math.floor(quotes.length*Math.random())
   let randQ,an;
   [randQ,an]=[quotes[randomInd]['quote'],quotes[randomInd]['author']]
+  var randColor=getrandomColor()
+  textArea.style.color=randColor
+  authName.style.color=randColor
+  mainArea.style.background=randColor
+  nxtbtn.style.background=randColor
   setTimeout(() => {
     textArea.innerHTML=randQ
     authName.innerHTML=an
-    let randColor=getrandomColor()
-    textArea.style.color=randColor
-    authName.style.color=randColor
-    mainArea.style.background=randColor
-    nxtbtn.style.background=randColor
-  }, 1500);
+  }, 500);
+}
+newQuote.addEventListener('click', gen)
 
-})
