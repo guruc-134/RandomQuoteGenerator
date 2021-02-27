@@ -1,0 +1,42 @@
+// variables
+*{
+  transition: all 2s ease-in;
+  
+}
+.navBar {
+  &__Heading {
+    font-size: 3rem;
+    text-align: center;
+    height: 10vh;
+  }
+}
+.main {
+  #quote-box {
+    background: white;
+    margin: 0rem auto;
+    width: 50%;
+    padding: 2.6rem;
+    min-height: 50vh;
+    border-radius: 33%;
+  }
+  #text {
+    font-size: 2rem;
+    margin-top: 5rem;
+    min-height: 10rem;
+    justify-content: center;
+    text-align: center;
+  }
+  #author {
+    text-align: right;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  #new-quote {
+    background: lightgreen;
+    font-size: 1.3rem;
+    margin: 0px auto;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+}
