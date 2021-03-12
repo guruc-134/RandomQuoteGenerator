@@ -109,7 +109,7 @@ const mainArea = document.querySelector('.body')
 const nxtbtn = document.querySelector('#new-quote')
 const tweetBtn = document.getElementById('tweet-quote')
 
-fetch("https://type.fit/api/quowewetes")
+fetch("https://type.fit/api/quotes")
   .then(function (response) {
     return response.json()
   })
@@ -119,7 +119,6 @@ fetch("https://type.fit/api/quowewetes")
   })
   .catch(() => {
     quotes = QQ
-    console.log('here')
     showQuote()
 
   })
