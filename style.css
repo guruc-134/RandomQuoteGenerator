@@ -1,10 +1,11 @@
 * {
-  transition: all 1s ease-in; }
+  transition: all .6s ease-in; }
 
 .navBar__Heading {
   font-size: 3rem;
   text-align: center;
-  height: 10vh; }
+  height: 10vh;
+  color: white; }
 
 .main #quote-box {
   background: white;
@@ -33,3 +34,7 @@
   padding: 0.3rem;
   border-radius: 2rem;
   margin-bottom: 2rem; }
+
+#tweet-quote {
+  color: black;
+  text-decoration: none; }
